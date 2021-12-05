@@ -67,3 +67,11 @@ body{
 	margin-left:5px;
 	color:white;
 }
+
+ .search-panel{
+ 	position: absolute;
+ 	top:65px;
+ }
+#market-image{
+	width:180px;
+}
