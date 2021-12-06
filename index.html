@@ -102,7 +102,7 @@
     				</span>
     				<img src="images/dropdown-symbol.png" id="dropdown-symbol">
     			</span>
-    			<input type="text" placeholder="Search.." id="dropdown-search-input" onkeyup="dropdown_search_region_filter()">
+    			<input type="text" placeholder="Поиск.." id="dropdown-search-input" onkeyup="dropdown_search_region_filter()">
     			<div class="dropdown-content-region" id="dropdown-list-region">
     				<a href="">Весь Казахстан</a>
     				<a class="region" onclick="select_region1()">Акмолинская область</a>
@@ -112,16 +112,20 @@
 	    			<a class="hide" onclick="select_city2()">
 	    				Нур-Султан
 	    			</a>
+	    			<a class="hide" onclick="select_city3()">
+	    				Атбасар
+	    			</a>
+	    			<a class="hide" onclick="select_city4()">
+	    				Боровое
+	    			</a>
 	    			
-    				<a class="region">Актюбинская область</a>
-    				<div class="hide">
-    					Актобе<br>
-						Акраб<br>
-						Алга<br>
-						Бадамша<br>
-						Иргиз<br>
-						Кандыагаш<br>
-    				</div>
+    				<a class="region" onclick="select_region2()">Актюбинская область</a>
+    				<a class="hide" onclick="select_city5()">
+	    				Актобе
+	    			</a>
+	    			<div class="hide" onclick="select_city6()">
+	    				Мартук
+	    			</div>
     				<a class="region">Алматинская область</a>
     				<div class="hide">
     					Алматы<br>
@@ -131,25 +135,124 @@
 						Ават<br>
 						Азат<br>
     				</div>
-    				<a href="">Атырауская область</a>
-    				<a href="">Восточно-Казахстанская область</a>
-    				<a href="">Жамбылская область</a>
-    				<a href="">Западно-Казахстанская область</a>
-    				<a href="">Карагандинская область</a>
-    				<a href="">Костанайская область</a>
-    				<a href="">Кызылординская область</a>
-    				<a href="">Мангистауская область</a>
-    				<a href="">Павлодарская область</a>
-    				<a href="">Северо-Казахстанская область</a>
-    				<a href="">Туркестанская область</a>
+    				<a class="region" onclick="select_region3()">Атырауская область</a>
+    				<a class="region" onclick="select_region4()">Восточно-Казахстанская область</a>
+    				<a class="region" onclick="select_region5()">Жамбылская область</a>
+    				<a class="region" onclick="select_region6()">Западно-Казахстанская область</a>
+    				<a class="region" onclick="select_region7()">Карагандинская область</a>
+    				<a class="region" onclick="select_region8()">Костанайская область</a>
+    				<a class="region" onclick="select_region9()">Кызылординская область</a>
+    				<a class="region" onclick="select_region10()">Мангистауская область</a>
+    				<a class="region" onclick="select_region11()">Павлодарская область</a>
+    				<a class="region" onclick="select_region12()">Северо-Казахстанская область</a>
+    				<a class="region" onclick="select_region13()">Туркестанская область</a>
     			</div>
+    		</div>
+    		<div class="search_button">
+    			<button class="search_button" id="search_button-text" onclick="downloading()">
+    				Найти
+    			</button>
     		</div>
         </div>	
     	</div>
 
-    	<div class="search-panel__categories">	
+    	<div class="search-panel__categories">
 
+    	<div class="flex-container">
+    	<div class="category">
+         <img src="images/Услуги.png" class="categories" alt="Услуги">
+         <figcaption class="categories_caption">
+         	Услуги
+         </figcaption>
     	</div>
+    	<div class="hide-description">
+    		Бла бла
+    	</div>
+
+    	<div class="category">
+    	<img src="images/Электроника.png" class="categories" alt="Электроника">
+         <figcaption class="categories_caption">
+         	Электроника
+         </figcaption>
+    	</div>
+    	<div class="hide-description">
+    		Бла бла роо электронику
+    	</div>
+
+  		<div>
+    	<img src="images/Для-дома-и-сада.png" class="categories" alt="Для-дома-и-сада">
+         <figcaption class="categories_caption">
+         	Для дома и сада
+         </figcaption>
+    	</div>
+
+    	<div>
+    	<img src="images/Личные-вещи.png" class="categories" alt="Личные-вещи">
+         <figcaption class="categories_caption">
+         	Личные вещи
+         </figcaption>
+    	</div>
+
+    	<div>
+    	<img src="images/Для-бизнеса.png" class="categories" alt="Для бизнеса">
+         <figcaption class="categories_caption">
+         	Для бизнеса
+         </figcaption>
+    	</div>
+
+        <div>
+		<img src="images/Животные.png" class="categories" alt="Животные">
+         <figcaption class="categories_caption">
+         	Животные
+         </figcaption>
+    	</div>
+
+    	<div>
+		<img src="images/Детям.png" class="categories" alt="Детям">
+         <figcaption class="categories_caption">
+         	Детям
+         </figcaption>
+    	</div>
+
+    	<div>
+		<img src="images/Хобби-и-спорт.png" class="categories" alt="Хобби-и-спорт">
+         <figcaption class="categories_caption">
+         	Хобби и спорт
+         </figcaption>
+    	</div>
+
+    	<div>
+		<img src="images/Работа.png" class="categories" alt="Работа">
+         <figcaption class="categories_caption">
+         	Работа
+         </figcaption>
+    	</div>
+
+    	<div>
+		<img src="images/Недвижимость.png" class="categories" alt="Недвижимость">
+         <figcaption class="categories_caption">
+         	Недвижимость
+         </figcaption>
+    	</div>
+
+    	<div>
+		<img src="images/Транспорт.png" class="categories" alt="Транспорт">
+         <figcaption class="categories_caption">
+         	Транспорт
+         </figcaption>
+    	</div>
+    	</div>	
+
+    	<main>
+    		<h3>
+    			Новые объявления в <span id="region-name">Алматинской области</span>
+    		</h3>
+    	</main>
+
+
+
+
+
     </div>
     
 
@@ -183,9 +286,52 @@
 
 		function select_region1(){
 			document.getElementById("dropdown-text-region").innerHTML='Акмолинская область';
+			document.getElementById("region-name").innerHTML='Акмолинской область';
+		}
+		function select_region2(){
+			document.getElementById("dropdown-text-region").innerHTML='Актюбинская область';
+			document.getElementById("region-name").innerHTML='Актюбинской область';
+		}
+		function select_region3(){
+			document.getElementById("dropdown-text-region").innerHTML='Атырауская область';
+			document.getElementById("region-name").innerHTML='Атырауской область';
+		}
+		function select_region4(){
+			document.getElementById("dropdown-text-region").innerHTML='Восточно-Казахстанская область';
+			document.getElementById("region-name").innerHTML='Восточно-Казахстанской область';
+		}
+		function select_region5(){
+			document.getElementById("dropdown-text-region").innerHTML='Жамбылская область';
+			document.getElementById("region-name").innerHTML='Жамбылской область';
 		}
 		function select_city1(){
 			document.getElementById("dropdown-text-region").innerHTML='Кокшетау';
+			document.getElementById("region-name").innerHTML='Кокшетау';
+		}
+		function select_city2(){
+			document.getElementById("dropdown-text-region").innerHTML='Нур-Султан';
+			document.getElementById("region-name").innerHTML='Нур-Султане';
+		}
+		function select_city3(){
+			document.getElementById("dropdown-text-region").innerHTML='Атбасар';
+			document.getElementById("region-name").innerHTML='Атбасаре';
+		}
+		function select_city4(){
+			document.getElementById("dropdown-text-region").innerHTML='Боровое';
+			document.getElementById("region-name").innerHTML='Боровом';
+		}
+		function select_city5(){
+			document.getElementById("dropdown-text-region").innerHTML='Актобе';
+			document.getElementById("region-name").innerHTML='Актобе';
+		}
+		function select_city6(){
+			document.getElementById("dropdown-text-region").innerHTML='Мартук';
+			document.getElementById("region-name").innerHTML='Мартуке';
+		}
+
+
+		function downloading(){
+			document.getElementById("search_button-text").style.backgroundImage="url('https://c.tenor.com/wfEN4Vd_GYsAAAAC/loading.gif')";
 		}
     </script>
 </body>
