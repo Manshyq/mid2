@@ -95,7 +95,7 @@ body{
 	color:gray;
 	border-radius: 4px;
 }
-#dropdown_button{
+.dropdown_button{
 	position: relative;
 	bottom: 7px;
 }
@@ -152,6 +152,17 @@ body{
 	border:none;
 	font-family: 'Open Sans',Helvetica,Arial,sans-serif;
 	font-size: 15px;
+}
+
+.search-form__dropdown_region{
+	position: relative;
+	top:-68px;
+	left:650px;
+}
+#dropdown-symbol-region{
+	position: relative;
+	top:14px;
+	width:20px;
 }
 .search-panel__categories {
 }
