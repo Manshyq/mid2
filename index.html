@@ -9,6 +9,7 @@
 	<link rel="search" type="application/opensearchdescription+xml" title="Маркет.КЗ" href="/opensearch.xml" />
 </head>
 <body>
+
 	<div class="header">
 		<div class="header__navigation">
 			<div class="header__navigation_links">
@@ -65,12 +66,38 @@
     		<img src="images/market1.png" id="market-image">
     	</div>
 
-    	<div class="search-panel__search-form">	
+    	<div class="search-panel__search-form">
+    	<div class="search-panel__search-form_white">
+    		<div class="search-form__dropdown">
+    			<span onclick="dropdown_search()" id="dropdown_button">
+    				<span class="dropdown-text">
+    					Во всех разделах
+    				</span>
+    				<img src="images/dropdown-symbol.png" id="dropdown-symbol">
+    			</span>
+    			<div class="dropdown-content" id="dropdown-list">
+    				<a href="">Услуги</a>
+    				<a href="">Электроника</a>
+    				<a href="">Для дома и сада</a>
+    				<a href="">Личные вещи</a>
+    				<a href="">Для бизнеса</a>
+    				<a href="">Животные</a>
+    				<a href="">Детям</a>
+    				<a href="">Хобби и спорт</a>
+    				<a href="">Работа</a>
+    				<a href="">Недвижимость</a>
+    				<a href="">Транспорт</a>
+    			</div>
+    		</div>
 
+    		<div class="search-form">
+    			<input type="text" name="search"  placeholder="Быстрый поиск" class="search-form">
+    		</div>
+        </div>	
     	</div>
 
     	<div class="search-panel__categories">	
-    		
+
     	</div>
     </div>
     
@@ -78,5 +105,10 @@
     <footer>
     	
     </footer>   
+    <script>
+    	function dropdown_search(){
+    		document.getElementById("dropdown-list").classList.toggle("show");
+    	}
+    </script>
 </body>
 </html>
