@@ -70,7 +70,7 @@
     	<div class="search-panel__search-form_white">
     		<div class="search-form__dropdown">
     			<span onclick="dropdown_search()" class="dropdown_button">
-    				<span class="dropdown-text">
+    				<span id="dropdown-text">
     					Во всех разделах
     				</span>
     				<img src="images/dropdown-symbol.png" id="dropdown-symbol">
@@ -95,25 +95,53 @@
     		</div>
 
     		<div class="search-form__dropdown_region">
-    			<span onclick="dropdown_search()" class="dropdown_button">
+    			<span onclick="dropdown_search_region()" class="dropdown_button">
     				<img src="images/dropdown-symbol-region.png" id="dropdown-symbol-region">
-    				<span class="dropdown-text">
+    				<span id="dropdown-text-region">
     					Весь Казахстан
     				</span>
     				<img src="images/dropdown-symbol.png" id="dropdown-symbol">
     			</span>
-    			<div class="dropdown-content" id="dropdown-list">
-    				<a href="">Услуги</a>
-    				<a href="">Электроника</a>
-    				<a href="">Для дома и сада</a>
-    				<a href="">Личные вещи</a>
-    				<a href="">Для бизнеса</a>
-    				<a href="">Животные</a>
-    				<a href="">Детям</a>
-    				<a href="">Хобби и спорт</a>
-    				<a href="">Работа</a>
-    				<a href="">Недвижимость</a>
-    				<a href="">Транспорт</a>
+    			<input type="text" placeholder="Search.." id="dropdown-search-input" onkeyup="dropdown_search_region_filter()">
+    			<div class="dropdown-content-region" id="dropdown-list-region">
+    				<a href="">Весь Казахстан</a>
+    				<a class="region" onclick="select_region1()">Акмолинская область</a>
+    				<a class="hide" onclick="select_city1()">
+	    				Кокшетау
+	    			</a>
+	    			<a class="hide" onclick="select_city2()">
+	    				Нур-Султан
+	    			</a>
+	    			
+    				<a class="region">Актюбинская область</a>
+    				<div class="hide">
+    					Актобе<br>
+						Акраб<br>
+						Алга<br>
+						Бадамша<br>
+						Иргиз<br>
+						Кандыагаш<br>
+    				</div>
+    				<a class="region">Алматинская область</a>
+    				<div class="hide">
+    					Алматы<br>
+						Талдыкорган<br>
+						Ушарал<br>
+						Абай (Алматинская область)<br>
+						Ават<br>
+						Азат<br>
+    				</div>
+    				<a href="">Атырауская область</a>
+    				<a href="">Восточно-Казахстанская область</a>
+    				<a href="">Жамбылская область</a>
+    				<a href="">Западно-Казахстанская область</a>
+    				<a href="">Карагандинская область</a>
+    				<a href="">Костанайская область</a>
+    				<a href="">Кызылординская область</a>
+    				<a href="">Мангистауская область</a>
+    				<a href="">Павлодарская область</a>
+    				<a href="">Северо-Казахстанская область</a>
+    				<a href="">Туркестанская область</a>
     			</div>
     		</div>
         </div>	
@@ -132,6 +160,33 @@
     	function dropdown_search(){
     		document.getElementById("dropdown-list").classList.toggle("show");
     	}
+    	function dropdown_search_region() {
+    	document.getElementById("dropdown-list-region").classList.toggle("show");
+		document.getElementById("dropdown-search-input").classList.toggle("show");
+		}
+
+		function dropdown_search_region_filter() {
+		  var input, filter, ul, li, a, i;
+		  input = document.getElementById("dropdown-search-input");
+		  filter = input.value.toUpperCase();
+		  div = document.getElementById("dropdown-list-region");
+		  a = div.getElementsByTagName("a");
+		  for (i = 0; i < a.length; i++) {
+		    txtValue = a[i].textContent || a[i].innerText;
+		    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+		      a[i].style.display = "";
+		    } else {
+		      a[i].style.display = "none";
+		    }
+		  }
+		}
+
+		function select_region1(){
+			document.getElementById("dropdown-text-region").innerHTML='Акмолинская область';
+		}
+		function select_city1(){
+			document.getElementById("dropdown-text-region").innerHTML='Кокшетау';
+		}
     </script>
 </body>
 </html>
