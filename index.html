@@ -76,17 +76,18 @@
     				<img src="images/dropdown-symbol.png" id="dropdown-symbol">
     			</span>
     			<div class="dropdown-content" id="dropdown-list">
-    				<a href="">Услуги</a>
-    				<a href="">Электроника</a>
-    				<a href="">Для дома и сада</a>
-    				<a href="">Личные вещи</a>
-    				<a href="">Для бизнеса</a>
-    				<a href="">Животные</a>
-    				<a href="">Детям</a>
-    				<a href="">Хобби и спорт</a>
-    				<a href="">Работа</a>
-    				<a href="">Недвижимость</a>
-    				<a href="">Транспорт</a>
+    				<a class="category_main" onclick="select_category1()">Услуги</a>
+    					<a class="category_child" onclick="select_category_child1()">Строительство и ремонт</a>
+    				<a class="category_main" onclick="select_category2()">Электроника</a>
+    				<a class="category_main" onclick="select_category3()">Для дома и сада</a>
+    				<a class="category_main" onclick="select_category4()">Личные вещи</a>
+    				<a class="category_main" onclick="select_category5()">Для бизнеса</a>
+    				<a class="category_main" onclick="select_category6()">Животные</a>
+    				<a class="category_main" onclick="select_category7()">Детям</a>
+    				<a class="category_main" onclick="select_category8()">Хобби и спорт</a>
+    				<a class="category_main" onclick="select_category9()">Работа</a>
+    				<a class="category_main" onclick="select_category10()">Недвижимость</a>
+    				<a class="category_main" onclick="select_category11()">Транспорт</a>
     			</div>
     		</div>
 
@@ -136,7 +137,25 @@
 						Азат<br>
     				</div>
     				<a class="region" onclick="select_region3()">Атырауская область</a>
+    				<div class="hide">
+    					Атырау<br>
+						Аккыстау<br>
+						Ганюшкино<br>
+						Доссор<br>
+						Индер<br>
+    				</div>
     				<a class="region" onclick="select_region4()">Восточно-Казахстанская область</a>
+    				<div class="hide">
+    					Семей<br>
+						Усть-Каменогорск<br>
+						Акжар<br>
+						Аксуат<br>
+						Актогай (ВКО)<br>
+						Алтай<br>
+						Асу-Булак<br>
+						Ауэзов<br>
+						
+    				</div>
     				<a class="region" onclick="select_region5()">Жамбылская область</a>
     				<a class="region" onclick="select_region6()">Западно-Казахстанская область</a>
     				<a class="region" onclick="select_region7()">Карагандинская область</a>
@@ -159,25 +178,143 @@
     	<div class="search-panel__categories">
 
     	<div class="flex-container">
-    	<div class="category">
+    	<div class="category" onclick="show_description()">
          <img src="images/Услуги.png" class="categories" alt="Услуги">
          <figcaption class="categories_caption">
          	Услуги
          </figcaption>
     	</div>
     	<div class="hide-description">
-    		Бла бла
+    		<span class="hide-description_title" id="hide-description1">
+    			<a href="https://market.kz/uslugi/" class="no-decoration">
+    			Все объявления в категории Услуги
+    			</a>
+    		</span>
+    			<table class="description_table">
+    				<tr>
+    					<td>
+    						Строительство и ремонт
+    					</td>
+    					<td>
+    						Образование, курсы
+    					</td>
+    					<td>
+    						Ремонт и обслуживание техники
+    					</td>
+    					<td>
+    						Прокат товаров
+    					</td>
+    				</tr>
+
+    				<tr>
+    					<td>
+    						Красота и здоровье
+    					</td>
+    					<td>
+    						Интернет и компьютеры
+    					</td>
+    					<td>
+    						Перевозки / Автосервис
+    					</td>
+    					<td>
+    						Деловые услуги
+    					</td>
+    				</tr>
+
+    				<tr>
+    					<td>
+    						Уборка
+    					</td>
+    					<td>
+    						Охрана / Безопасность
+    					</td>
+    					<td>
+    						Няни / сиделки
+    					</td>
+    					<td>
+    						Пошив одежды
+    					</td>
+    				</tr>
+
+    				<tr>
+    					<td>
+    						Праздники и мероприятия
+    					</td>
+    					<td>
+    						Фото и видео-съёмка
+    					</td>
+    					<td>
+    						Другие услуги
+    					</td>
+    					<td>
+    						
+    					</td>
+    				</tr>
+    			</table>
     	</div>
 
-    	<div class="category">
+    	<div class="category" onclick="show_description2()">
     	<img src="images/Электроника.png" class="categories" alt="Электроника">
          <figcaption class="categories_caption">
          	Электроника
          </figcaption>
     	</div>
     	<div class="hide-description">
-    		Бла бла роо электронику
+    		<span class="hide-description_title" id="hide-description2">
+    			<a href="https://market.kz/uslugi/" class="no-decoration">
+    			Все объявления в категории Электроника
+    			</a>
+    		</span>
+    			<table class="description_table">
+    				<tr>
+    					<td>
+    						Компьютеры
+    					</td>
+    					<td>
+    						Фото и видеокамеры
+    					</td>
+    					<td>
+    						Телефоны и гаджеты
+    					</td>
+    					<td>
+    						ТВ и видео
+    					</td>
+    				</tr>
+
+    				<tr>
+    					<td>
+    						Аудиотехника
+    					</td>
+    					<td>
+    						Игровые приставки
+    					</td>
+    					<td>
+    						Индивидуальный уход
+    					</td>
+    					<td>
+    						Климатическая техника
+    					</td>
+    				</tr>
+
+    				<tr>
+    					<td>
+    						Техника для кухни
+    					</td>
+    					<td>
+    						Техника для дома
+    					</td>
+    					<td>
+    						Прочая техника
+    					</td>
+    					<td>
+    						Техника
+    					</td>
+    				</tr>
+
+    				
+    			</table>
     	</div>
+
 
   		<div>
     	<img src="images/Для-дома-и-сада.png" class="categories" alt="Для-дома-и-сада">
@@ -244,95 +381,206 @@
     	</div>	
 
     	<main>
+    		<div id="sticky">
+					<img src="images/QR.png" id="QR_image">
+				</div>
     		<h3>
     			Новые объявления в <span id="region-name">Алматинской области</span>
     		</h3>
+
+    		<div class="grid-container">
+			  <div class="grid-item">
+			  	<img src="images/1.png" class="ad_image">
+			  	<figcaption>
+			  		<span class="price">
+ 						75 000 ₸
+			  		</span>
+			  		<br>
+			  			<a href="https://market.kz/a/fatbike-velosiped-forward-bizon-26-2019-fetbayk-fetbayk-106415404/" class="ad_name no-decoration">
+			  			Fatbike Велосипед Forward Bizon 26 2019 / Фэтбайк / Фетбайк
+			  			</a>
+			  	</figcaption>
+			  </div>
+			  <div class="grid-item">
+			  	<img src="images/2.png" class="ad_image">
+			  	<figcaption>
+			  		<span class="price">
+ 						1500 ₸
+			  		</span>
+			  		<br>
+			  			<a href="https://market.kz/a/tufli-lodochka-106595975/" class="ad_name no-decoration">
+			  			Туфли лодочка
+			  			</a>
+			  	</figcaption>
+			  </div>
+			  <div class="grid-item">
+			  	<img src="images/3.png" class="ad_image">
+			  	<figcaption>
+			  		<span class="price">
+ 						25 000 ₸
+			  		</span>
+			  		<br>
+			  			<a href="https://market.kz/a/krovat-106651134/" class="ad_name no-decoration">
+			  			Продам кровать
+			  			</a>
+			  	</figcaption>
+			  </div>  
+			  <div class="grid-item">
+			  	<img src="images/4.png" class="ad_image">
+			  	<figcaption>
+			  		<span class="price">
+ 						75 000 ₸
+			  		</span>
+			  		<br>
+			  		<a href="https://market.kz/a/prodaetsya-dva-barana-106696293/" class="ad_name no-decoration">
+			  			Продается два барана 
+			  			</a>
+			  	</figcaption>
+			  </div><div class="grid-item">
+			  	<img src="images/5.png" class="ad_image">
+			  	<figcaption>
+			  		<span class="price">
+ 						5 000 ₸
+			  		</span>
+			  		<br>
+			  		<a href="https://market.kz/a/koshkin-dom-106714964/" class="ad_name no-decoration">
+			  			Кошкин дом
+			  			</a>
+			  	</figcaption>
+			  </div><div class="grid-item">
+			  	<img src="images/6.png" class="ad_image">
+			  	<figcaption>
+			  		<span class="price">
+ 						2 000 ₸
+			  		</span>
+			  		<br>
+			  		<a href="https://market.kz/a/vana-tazik-kastryulya-106714707/" class="ad_name no-decoration">
+			  			Вана тазик кастрюля
+			  			</a>
+			  	</figcaption>
+			  </div><div class="grid-item">
+			  	<img src="images/7.png" class="ad_image">
+			  	<figcaption>
+			  		<span class="price">
+ 						275 000 ₸
+			  		</span>
+			  		<br>
+			  		<a href="https://market.kz/a/schenki-nemetskogo-tsvergshpitsa-106615331/" class="ad_name no-decoration">
+			  			Щенки немецкого цвергшпица
+			  			</a>
+			  	</figcaption>
+			  </div><div class="grid-item">
+			  	<img src="images/8.png" class="ad_image">
+			  	<figcaption>
+			  		<span class="price">
+ 						455 000 ₸
+			  		</span>
+			  		<br>
+			  		<a href="https://market.kz/a/telefon-106720295/" class="ad_name no-decoration">
+			  			iPhone 12 Pro Max 256 gb
+			  			</a>
+			  	</figcaption>
+			  </div><div class="grid-item">
+			  	<img src="images/9.png" class="ad_image">
+			  	<figcaption>
+			  		<span class="price">
+ 						3 990 ₸
+			  		</span>
+			  		<br>
+			  			<a href="https://market.kz/a/proda-tsya-kniga-habiba-v-horoshim-sostoyanie-106720289/" class="ad_name no-decoration">
+			  			Продаётся книга Хабиба!В хорошим состояние!
+			  			</a>
+			  		<br>
+			  	</figcaption>
+			  </div>
+			</div>	
+
+			<span id="dots">...</span>
+			<button onclick="show_more()" id="show-more">
+				Показать ещё
+			</button>	
+
+
+			<div class="grid-container" id="more">
+			  <div class="grid-item">
+			  	<img src="images/1.png" class="ad_image">
+			  	<figcaption>
+			  		<span class="price">
+ 						75 000 ₸
+			  		</span>
+			  		<br>
+			  			<a href="https://market.kz/a/fatbike-velosiped-forward-bizon-26-2019-fetbayk-fetbayk-106415404/" class="ad_name no-decoration">
+			  			Fatbike Велосипед Forward Bizon 26 2019 / Фэтбайк / Фетбайк
+			  			</a>
+			  	</figcaption>
+			  </div>
+			  <div class="grid-item">
+			  	<img src="images/2.png" class="ad_image">
+			  	<figcaption>
+			  		<span class="price">
+ 						1500 ₸
+			  		</span>
+			  		<br>
+			  			<a href="https://market.kz/a/tufli-lodochka-106595975/" class="ad_name no-decoration">
+			  			Туфли лодочка
+			  			</a>
+			  	</figcaption>
+			  </div>
+			  <div class="grid-item">
+			  	<img src="images/3.png" class="ad_image">
+			  	<figcaption>
+			  		<span class="price">
+ 						25 000 ₸
+			  		</span>
+			  		<br>
+			  			<a href="https://market.kz/a/krovat-106651134/" class="ad_name no-decoration">
+			  			Продам кровать
+			  			</a>
+			  	</figcaption>
+			  </div>  
+			  <div class="grid-item">
+			  	<img src="images/3.png" class="ad_image">
+			  	<figcaption>
+			  		<span class="price">
+ 						25 000 ₸
+			  		</span>
+			  		<br>
+			  			<a href="https://market.kz/a/krovat-106651134/" class="ad_name no-decoration">
+			  			Продам кровать
+			  			</a>
+			  	</figcaption>
+			  </div>  
+			  <div class="grid-item">
+			  	<img src="images/4.png" class="ad_image">
+			  	<figcaption>
+			  		<span class="price">
+ 						75 000 ₸
+			  		</span>
+			  		<br>
+			  		<a href="https://market.kz/a/prodaetsya-dva-barana-106696293/" class="ad_name no-decoration">
+			  			Продается два барана 
+			  			</a>
+			  	</figcaption>
+			  </div><div class="grid-item">
+			  	<img src="images/5.png" class="ad_image">
+			  	<figcaption>
+			  		<span class="price">
+ 						5 000 ₸
+			  		</span>
+			  		<br>
+			  		<a href="https://market.kz/a/koshkin-dom-106714964/" class="ad_name no-decoration">
+			  			Кошкин дом
+			  			</a>
+			  	</figcaption>
+			  </div>
+
     	</main>
-
-
-
-
-
-    </div>
-    
-
     <footer>
-    	
+    	<img src="images/ftr.png" class="ftr">
+    	<img src="images/ftr2.png" class="ftr">
     </footer>   
-    <script>
-    	function dropdown_search(){
-    		document.getElementById("dropdown-list").classList.toggle("show");
-    	}
-    	function dropdown_search_region() {
-    	document.getElementById("dropdown-list-region").classList.toggle("show");
-		document.getElementById("dropdown-search-input").classList.toggle("show");
-		}
-
-		function dropdown_search_region_filter() {
-		  var input, filter, ul, li, a, i;
-		  input = document.getElementById("dropdown-search-input");
-		  filter = input.value.toUpperCase();
-		  div = document.getElementById("dropdown-list-region");
-		  a = div.getElementsByTagName("a");
-		  for (i = 0; i < a.length; i++) {
-		    txtValue = a[i].textContent || a[i].innerText;
-		    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-		      a[i].style.display = "";
-		    } else {
-		      a[i].style.display = "none";
-		    }
-		  }
-		}
-
-		function select_region1(){
-			document.getElementById("dropdown-text-region").innerHTML='Акмолинская область';
-			document.getElementById("region-name").innerHTML='Акмолинской область';
-		}
-		function select_region2(){
-			document.getElementById("dropdown-text-region").innerHTML='Актюбинская область';
-			document.getElementById("region-name").innerHTML='Актюбинской область';
-		}
-		function select_region3(){
-			document.getElementById("dropdown-text-region").innerHTML='Атырауская область';
-			document.getElementById("region-name").innerHTML='Атырауской область';
-		}
-		function select_region4(){
-			document.getElementById("dropdown-text-region").innerHTML='Восточно-Казахстанская область';
-			document.getElementById("region-name").innerHTML='Восточно-Казахстанской область';
-		}
-		function select_region5(){
-			document.getElementById("dropdown-text-region").innerHTML='Жамбылская область';
-			document.getElementById("region-name").innerHTML='Жамбылской область';
-		}
-		function select_city1(){
-			document.getElementById("dropdown-text-region").innerHTML='Кокшетау';
-			document.getElementById("region-name").innerHTML='Кокшетау';
-		}
-		function select_city2(){
-			document.getElementById("dropdown-text-region").innerHTML='Нур-Султан';
-			document.getElementById("region-name").innerHTML='Нур-Султане';
-		}
-		function select_city3(){
-			document.getElementById("dropdown-text-region").innerHTML='Атбасар';
-			document.getElementById("region-name").innerHTML='Атбасаре';
-		}
-		function select_city4(){
-			document.getElementById("dropdown-text-region").innerHTML='Боровое';
-			document.getElementById("region-name").innerHTML='Боровом';
-		}
-		function select_city5(){
-			document.getElementById("dropdown-text-region").innerHTML='Актобе';
-			document.getElementById("region-name").innerHTML='Актобе';
-		}
-		function select_city6(){
-			document.getElementById("dropdown-text-region").innerHTML='Мартук';
-			document.getElementById("region-name").innerHTML='Мартуке';
-		}
-
-
-		function downloading(){
-			document.getElementById("search_button-text").style.backgroundImage="url('https://c.tenor.com/wfEN4Vd_GYsAAAAC/loading.gif')";
-		}
+    <script src="app.js">
+    	
     </script>
 </body>
 </html>
