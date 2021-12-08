@@ -427,3 +427,20 @@ body{
 #more{
 	display: none;
 }
+#hide_QR{
+	position: relative;
+	top:450px;
+	left:870px;
+}
+
+h3{
+	color: red;
+	animation-name: color_changing;
+	animation-duration: 4s;
+}
+@keyframes color_changing {
+  0%   {color: red;}
+  25%  {color: yellow;}
+  50%  {color: blue;}
+  100% {color: green;}
+}
