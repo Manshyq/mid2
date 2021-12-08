@@ -437,6 +437,7 @@ h3{
 	color: red;
 	animation-name: color_changing;
 	animation-duration: 4s;
+	animation-iteration-count: infinite;
 }
 @keyframes color_changing {
   0%   {color: red;}
