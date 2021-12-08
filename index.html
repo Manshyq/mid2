@@ -51,7 +51,7 @@
         </div>
 
         <div class="header__navigation_create">
-        	<a href="https://aigerimali.github.io/add/" class="no-decoration">
+        	<a href="" class="no-decoration">
         	<img src="images/plus.png" id="plus-image">
         	<span id="create-text">
         	Подать объявление
@@ -383,7 +383,9 @@
     	<main>
     		<div id="sticky">
 					<img src="images/QR.png" id="QR_image">
-				</div>
+			</div>
+					<button id="hide_QR">Скрыть</button>
+				
     		<h3>
     			Новые объявления в <span id="region-name">Алматинской области</span>
     		</h3>
@@ -573,14 +575,24 @@
 			  			</a>
 			  	</figcaption>
 			  </div>
-
     	</main>
     <footer>
     	<img src="images/ftr.png" class="ftr">
     	<img src="images/ftr2.png" class="ftr">
     </footer>   
+
     <script src="app.js">
     	
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script> 
+	$(document).ready(function(){
+	  $("#hide_QR").click(function(){
+	    $("#QR_image").animate({
+	      height: 'toggle'
+	    });
+	  });
+	});
+	</script> 
 </body>
 </html>
